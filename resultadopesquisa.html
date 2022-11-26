@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Veeri</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/resultadopesquisa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!--    HEADER       -->
+    <header id="navbar">
+        <a href="index.html">
+            <img src="images/logo.png" id="logo" alt="Veeri logotipo" />
+        </a>
+        <nav>
+            <a href="especialista.html">
+                <img src="images/bi_send-check-fill.svg" />
+            </a>
+            <a href="ranking.html">
+                <img src="images/fa6-solid_ranking-star.svg" />
+            </a>
+            <a href="faq.html">
+                <img src="images/bxs_book-content.png" />
+            </a>
+        </nav>
+    </header>
+
+    <!--    BUSCA DE NOTÍCIAS       -->
+    <section id="busca-noticia">
+        <h2 class="h2-busca">
+            Somos uma plataforma independente de combate à desinformação através da busca de conteúdos falsos na
+            internet. Para evitar compartilhar links com fake news, realize sua checagem antes de compartilhar:
+        </h2>
+
+        <form onsubmit="validateNews(event)">
+            <input id="link-noticia" placeholder="Digite o link da sua notícia" type="url" />
+        </form>
+    </section>
+
+
+    <!--  RESULTADO DA PESQUISA  -->
+    <section class="resultado-pesquisa">
+        <div class="content">
+            <div class="card">
+                <div class="card-header">
+                    <h1>
+                        Essa notícia parece <span style="color: #d16666;font-weight: 600;
+                        font-size: 1.2rem">falsa</span>...
+                        <br><br>
+                    </h1>
+                    <h2>
+                        Nosso algoritmo de avaliação da veracidade da notícia encontrou indícios que ela pode ser
+                        falsa. Para confirmar a veracidade dessa informação é importante que seja feita a avaliação
+                        por um especialista.
+                        <br><br>
+                    </h2>
+                </div>
+                <div class="card-footer">
+                    <h2>
+                        Mas e na sua opinião, o quanto você acha que essa notícia é verdadeira?
+                        <br><br>
+                    </h2>
+                </div>
+                <div class="avaliacao">
+                    <div class="icone-estrela">
+                        <input type="radio" name="nota1" id="nota1">
+                        <label for="nota1" class="fas fa-star"></label>
+                        <input type="radio" name="nota2" id="nota2">
+                        <label for="nota2" class="fa fa-star"></label>
+                        <input type="radio" name="nota3" id="nota3">
+                        <label for="nota3" class="fa fa-star"></label>
+                        <input type="radio" name="nota4" id="nota4">
+                        <label for="nota4" class="fa fa-star"></label>
+                        <input type="radio" name="nota5" id="nota5">
+                        <label for="nota5" class="fa fa-star"></label>
+                    </div>
+                </div>
+                <div class="wrapper-btns">
+                    <div class="wrapper-avaliar">
+                        <form>
+                            <button formaction="compartilharpesquisa.html" type="submit" class="avaliar">AVALIAR</button>
+                        </form>
+                    </div>
+                    <div class="wrapper-especialista">
+                        <form>
+                            <button formaction="especialista.html" type="submit" class="especialista">CONSULTAR UM
+                                ESPECIALISTA</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!--    FOOTER       -->
+    <footer id="footer">
+        <p>© 2022 VEERI</p>
+        <a href="mailto:contato@veeri.tk">
+            <p>contato@veeri.tk</p>
+        </a>
+    </footer>
+</body>
+<script src="#"></script>
+
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Veeri</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/semresultado.css">
+</head>
+
+<body>
+    <!--    HEADER       -->
+    <header id="navbar">
+        <a href="index.html">
+            <img src="images/logo.png" id="logo" alt="Veeri logotipo" />
+        </a>
+        <nav>
+            <a href="especialista.html">
+                <img src="images/bi_send-check-fill.svg" />
+            </a>
+            <a href="ranking.html">
+                <img src="images/fa6-solid_ranking-star.svg" />
+            </a>
+            <a href="faq.html">
+                <img src="images/bxs_book-content.png" />
+            </a>
+        </nav>
+    </header>
+
+    <!--    BUSCA DE NOTÍCIAS       -->
+    <section id="busca-noticia">
+        <h2 class="h2-busca">
+            Somos uma plataforma independente de combate à desinformação através da busca de conteúdos falsos na
+            internet. Para evitar compartilhar links com fake news, realize sua checagem antes de compartilhar:
+        </h2>
+
+        <form onsubmit="validateNews(event)">
+            <input id="link-noticia" placeholder="Digite o link da sua notícia" type="url" />
+        </form>
+    </section>
+
+
+    <!--  RESULTADO DA PESQUISA  -->
+    <section class="resultado-pesquisa">
+        <div class="content">
+            <div class="card">
+                <div class="card-header">
+                    <h1>
+                        Sem resposta...
+                        <br><br>
+                    </h1>
+                    <h2>
+                        Infelizmente nosso algoritmo de avaliação não encontrou
+                        uma resposta para o link inserido.
+                        <br><br>
+                    </h2>
+                </div>
+                <div class="card-footer">
+                    <h2>
+                        Caso queira tentar novamente insira um novo link no campo acima. Do contrário
+                        podemos redicionar a sua busca para o envio da notícia à um especialista:
+                        <br><br>
+                    </h2>
+                    <div class="card-action">
+                        <form>
+                            <button formaction="especialista.html" type="submit" class="action" >CONSULTE UM ESPECIALISTA</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--    FOOTER       -->
+    <footer id="footer">
+        <p>© 2022 VEERI</p>
+        <a href="mailto:contato@veeri.tk">
+            <p>contato@veeri.tk</p>
+        </a>
+    </footer>
+</body>
+<script src="#"></script>
+
+</html>
